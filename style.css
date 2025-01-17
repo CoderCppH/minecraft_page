@@ -1,6 +1,7 @@
 .main_head{
     all:unset;
     left: 0;
+    display: flex;
     position: absolute;
     margin-right: 20px;
     cursor: pointer;
@@ -11,41 +12,50 @@
     cursor: pointer;
 }
 HEADER{
+    position: fixed;
     width: 100%;
     height: 80px;
     display: flex;
     align-items: center;
-    background-color: #5f5b5b;
+    background-color: #262423d3;
+    backdrop-filter: blur(20px);
+    -webkit-box-shadow: 0px 4px 1px 1px rgba(0, 0, 0, 0.533);
+    -moz-box-shadow: 0px 4px 1px 1px rgba(0, 0, 0, 0.533);
+    box-shadow: 0px 4px 1px 1px rgba(0, 0, 0, 0.533);
 }
 BODY{
     margin: 0;
     padding: 0;
-    background-color: gray;
+    background-color:rgb(23, 22, 21);
 }
-#navbar {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    width: 100px;
-  }
-#navbar li {
-    border-left: 10px solid #666;
-    border-bottom: 1px solid #666;
-}
-#navbar a {
-    background-color: #949494;
-    color: #fff;
-    padding: 5px;
-    text-decoration: none;
-    font-weight: bold;
-    border-left: 5px solid #33ADFF;
-    display: block;
-}
-#navbar a:hover {
-    background-color: #666;
-    border-left: 5px solid #3333FF;
-}
-
 label{
     color: #fff;
-  }
+}
+header img {
+    width: 200px;
+    display: block;
+    margin-top: 5%;
+    padding: auto;
+}
+.minecarft_logo {
+    
+    background:  rgba(0, 0, 0, 0.705);
+    background-size: cover;
+    background-position: center;
+    
+    padding: 20px;
+    box-shadow: 0 4px 0px 3px rgb(61, 57, 56); /* Тень для эффекта глубины */
+
+    width: 98%; /* Занимает всю ширину */
+    height: 750px; /* Ограниченная высота */
+    overflow: hidden; /* Скрывает часть изображения, выходящую за пределы контейнера */
+    display: flex; /* Используем flexbox для центрирования */
+    justify-content: center; /* Центрируем по горизонтали */
+    align-items: center; /* Центрируем по вертикали */
+}
+.minecarft_logo img {
+    width: 100%; /* Растягивает изображение на всю ширину контейнера */
+    height: auto; /* Сохраняет пропорции изображения */
+    max-height: 200%; /* Ограничивает высоту изображения */
+    object-fit: contain; /* Сохраняет пропорции, не обрезая изображение */
+}
